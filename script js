@@ -1,0 +1,7 @@
+// Example functionality to show dynamic like button counts
+document.querySelectorAll('.like-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    let likes = parseInt(button.textContent.split(' ')[1]);
+    button.textContent = `❤️ ${likes + 1}`;
+  });
+});
